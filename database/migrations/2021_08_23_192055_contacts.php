@@ -6,23 +6,22 @@ use Illuminate\Support\Facades\Schema;
 
 class Contacts extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
     public function up()
     {
-        //
+        schema::create('contacts', function (Blueprint $table) {
+            
+            $table->increments('id');
+            $table->string('name', 60);
+            $table->int('number');
+            $table->timestamps();
+            $table->softDeletes();
+        });
+        
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
-        //
+        Schema::drop('contacts');
     }
 }
