@@ -19,7 +19,9 @@ Route::get('/', function () {
 
 Auth::routes(); //não sei ainda o que faz
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/home', [App\Http\Controllers\ContactController::class, 'index'])->name('contact');
 
 Route::get('/vue-teste', function () {
     return view('vue-teste');

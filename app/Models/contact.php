@@ -10,6 +10,6 @@ class contact extends Model
 
     protected $fillable = ['name','contact'];  //campos que serão inseridos pelo usuário
     protected $guarded = ['id', 'created_at', 'update_at']; //inserções
-    protected $table = 'contacts';
+    protected $table = 'contact';
 
 }
