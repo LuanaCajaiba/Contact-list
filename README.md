@@ -28,7 +28,4 @@ php artisan serve
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> cb281821f20be6580a284d8c9820c57fba04b26a
